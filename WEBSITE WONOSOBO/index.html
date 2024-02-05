@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="./resources/ol.css">
+    <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+    <link rel="stylesheet" href="./resources/qgis2web.css">
+    <link rel="stylesheet" href="wonosobo.css">
+    <style>
+        .search-layer {
+            top: 65px;
+            left: .5em;
+        }
+
+        .ol-touch .search-layer {
+            top: 80px;
+        }
+    </style>
+    <style>
+        html,
+        body {
+            background-color: #fffefe;
+
+        }
+
+        .ol-control button {
+            background-color: #ffffff !important;
+            color: #000000 !important;
+            border-radius: 0px !important;
+        }
+
+        .ol-zoom,
+        .geolocate,
+        .gcd-gl-control .ol-control {
+            background-color: rgba(0, 0, 0, 0.4) !important;
+            padding: 3px !important;
+        }
+
+        .ol-scale-line {
+            background: none !important;
+        }
+
+        .ol-scale-line-inner {
+            border: 2px solid #6b4e4e !important;
+            border-top: none !important;
+            background: rgba(255, 255, 255, 0.5) !important;
+            color: black !important;
+        }
+    </style>
+    <style>
+
+    </style>
+    <title></title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">WONOSOBO</div>
+        <div class="menu">
+
+            <ul>
+                <li class="navLink"><a href="#home">Home</a></li>
+                <li class="navLink"><a href="#map">Map</a></li>
+                <li class="navLink"><a href="#desk">Deskripsi</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="home" class="home">
+        <img src="images/bgbaru.png" alt="">
+        <div class="judul">
+            <h2>PETA ADMINISTRASI DESA KABUPATEN WONOSOBO</h2>
+        </div>
+        <button class="tombol"><a href="#map">Menuju ke peta</a></button>
+    </div>
+
+
+
+    <div class="peta">
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="resources/polyfills.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="layers/Kecamatan_0.js"></script>
+        <script src="layers/ADMINISTRASIDESA_AR_25K_1.js"></script>
+        <script src="styles/Kecamatan_0_style.js"></script>
+        <script src="styles/ADMINISTRASIDESA_AR_25K_1_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script>
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </div>
+    <div id="desk">
+        <p>Letak geografis Kabupaten Wonosobo yaitu 70.11'.20" sampai 70.36'.24" garis Lintang Selatan (LS), serta
+            1090.44'.08" sampai 1100.04'.32" garis Bujur Timur (BT), dengan luas wilayah 98.468 hektar (984,68 km 2)
+            atau 3,03% luas Provinsi Jawa Tengah. Kabupaten ini sebagian besar terdiri dari wilayah perbukitan dan
+            pegunungan. Dari ketinggian daratan, Kabupaten Wonosobo berada pada 250-2.250 mdpl. Secara geologi Kabupaten
+            Wonosobo memiliki gunung berapi aktif seperti Gunung Sindoro dan Gunung Sumbing. Ada juga kawah aktif di
+            daratan tiggi Dieng yang membentuk plateau dan meninggalkan sisa erupsi.</p>
+
+        <p>Secara administrasi ada 15 kecamatan di Kabupaten Wonosobo yaitu:
+            Kecamatan Wadaslintang, Kecamatan Kepil, Kecamatan Sapuran, Kecamatan Kalibawang, Kecamatan Kaliwiro, Kecamatan
+            Leksono, Kecamatan Sukoharjo, Kecamatan Selomerto, Kecamatan Kalikajar, Kecamatan Kertek, Kecamatan Wonosobo,
+            Kecamatan Watumalang, Kecamatan Mojotengah, Kecamatan Garung, Kecamatan Kejajar.
+
+        </p>
+        
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>
